@@ -105,6 +105,22 @@
       justify-content: center;
     }
 
+    .btn-buy-order {
+      background-image: url("https://i.ibb.co/VMDRYft/1-2-14.png");
+      background-color: transparent;
+      background-size: 100% 100%;
+      background-position: center;
+      width: 300px;
+      height: 100px;
+      border: none;
+      cursor: pointer;
+      position: relative;
+      font-size: 18px;
+      font-weight: bold;
+      align-items: center;
+      justify-content: center;
+    }
+
     .custom-btn:hover,
     .btn-buy-now:hover {
       opacity: 0.8;
@@ -123,9 +139,11 @@
       opacity: 0.7;
       border: none;
       background-color: transparent;
+      transition: transform 0.4s ease-in-out;
     }
 
     .card.active {
+      transition: transform 0.4s ease-in-out;
       transform: translateX(0);
       opacity: 1;
       border: none;
@@ -133,39 +151,50 @@
     }
 
     .card.next {
+      transition: transform 0.4s ease-in-out;
       transform: translateX(30%) scale(0.8);
       opacity: 0.7;
       border: none;
       background-color: transparent;
     }
 
-    .luatchoi-item {
-      display: flex;
-      align-items: center;
-      padding: 20px 0;
-      gap: 50px;
+    .carousel-control-prev-bi-an,
+    .carousel-control-next-bi-an {
+      position: absolute;
+      background-color: transparent;
+      transition: transform 0.6s ease;
+      border: none;
+      cursor: pointer;
+      z-index: 2;
     }
 
-    .luatchoi-item p,
-    .luuy-item p {
-      text-align: justify;
-      font-size: 18px;
-    }
-
+    .luatchoi-item,
     .luuy-item {
       display: flex;
       align-items: center;
-      padding: 15px 0;
-      gap: 50px;
+      padding: 20px;
+      gap: 20px;
     }
 
     .number-item {
-      background-color: transparent;
+      background-image: url("https://i.ibb.co/F56Kq7Z/Untitled-1-02.png");
+      background-size: cover;
+      width: 60px;
+      height: 60px;
       color: white;
       font-weight: bold;
       font-size: 20px;
       display: flex;
+      align-items: center;
       justify-content: center;
+      box-sizing: border-box;
+      padding-right: 20px;
+    }
+
+    .luatchoi-item p {
+      margin: 0;
+      line-height: 1.6;
+      flex: 1;
     }
 
     .outer-div {
@@ -245,10 +274,10 @@
           class="py-3"
         />
         <p style="text-align: center; font-size: 18px">
-          Board Game CHIẾN LINH HUYỄN CẢNH được thực hiện vớ mục đích tạo sự gắn
-          kết xã hội trong bối cảnh các thiết bị công nghệ ngày càng phát triển,
-          dẫn đến sự xa cách trong các mối quan hệ bạn bè ROG Studio muốn tạo
-          nên những cuộc gặp gỡ, vui chơi, giải tỏa căng thẳng thông qua bộ
+          Board Game CHIẾN LINH HUYỄN CẢNH được thực hiện với mục đích tạo sự
+          gắn kết xã hội trong bối cảnh các thiết bị công nghệ ngày càng phát
+          triển, dẫn đến sự xa cách trong các mối quan hệ bạn bè ROG Studio muốn
+          tạo nên những cuộc gặp gỡ, vui chơi, giải tỏa căng thẳng thông qua bộ
           Broad Game CHIẾN LINH HUYỄN CẢNH, góp phần tạo sự gắn kết trong xã
           hội.
         </p>
@@ -378,8 +407,8 @@
               white 100%,
               #808080 0%
             );
-            padding-top: 20px;
-            padding-bottom: 20px;
+            padding-top: 40px;
+            padding-bottom: 40px;
             padding-left: 100px;
             padding-right: 300px;
           "
@@ -415,85 +444,14 @@
       </div>
       <p
         class="text-center py-4"
-        style="color: #fba919; font-weight: bold; font-size: 25px"
+        style="color: #fba919; font-weight: bold; font-size: 30px"
       >
         NHÂN VẬT
       </p>
       <div id="cardCarousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner mb-5 mt-2">
           <div class="carousel-item active">
-            <div class="d-flex justify-content-center" id="cardContainer">
-              <div class="card mx-1" style="width: 18rem">
-                <img
-                  src="https://i.ibb.co/X3TVvHD/the-nhan-vat-01.png"
-                  class="card-img-top"
-                  alt="Card 1"
-                />
-              </div>
-              <div class="card mx-1" style="width: 18rem">
-                <img
-                  src="https://i.ibb.co/SdKxpfk/the-nhan-vat-02.png"
-                  class="card-img-top"
-                  alt="Card 2"
-                />
-              </div>
-              <div class="card mx-1" style="width: 18rem">
-                <img
-                  src="https://i.ibb.co/1J58sV5/the-nhan-vat-03.png"
-                  class="card-img-top"
-                  alt="Card 3"
-                />
-              </div>
-              <div class="card mx-1" style="width: 18rem">
-                <img
-                  src="https://i.ibb.co/hXxPTcm/the-nhan-vat-04.png"
-                  class="card-img-top"
-                  alt="Card 4"
-                />
-              </div>
-              <div class="card mx-1" style="width: 18rem">
-                <img
-                  src="https://i.ibb.co/m64TwXw/the-nhan-vat-05.png"
-                  class="card-img-top"
-                  alt="Card 5"
-                />
-              </div>
-              <div class="card mx-1" style="width: 18rem">
-                <img
-                  src="https://i.ibb.co/FgktycJ/the-nhan-vat-06.png"
-                  class="card-img-top"
-                  alt="Card 6"
-                />
-              </div>
-              <div class="card mx-1" style="width: 18rem">
-                <img
-                  src="https://i.ibb.co/pjSy7MT/the-nhan-vat-07.png"
-                  class="card-img-top"
-                  alt="Card 7"
-                />
-              </div>
-              <div class="card mx-1" style="width: 18rem">
-                <img
-                  src="https://i.ibb.co/Yys8jhy/the-nhan-vat-08.png"
-                  class="card-img-top"
-                  alt="Card 8"
-                />
-              </div>
-              <div class="card mx-1" style="width: 18rem">
-                <img
-                  src="https://i.ibb.co/3yY2htZ/the-nhan-vat-09.png"
-                  class="card-img-top"
-                  alt="Card 9"
-                />
-              </div>
-              <div class="card mx-1" style="width: 18rem">
-                <img
-                  src="https://i.ibb.co/85HBpvL/the-nhan-vat-10.png"
-                  class="card-img-top"
-                  alt="Card 10"
-                />
-              </div>
-            </div>
+            <div class="d-flex justify-content-center" id="cardContainer"></div>
             <!-- Thẻ tách -->
             <div
               class="d-flex justify-content-center align-items-center"
@@ -513,9 +471,18 @@
           type="button"
           data-bs-target="#cardCarousel"
           data-bs-slide="prev"
+          id="prevButton"
         >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span
+            class="carousel-control-prev-icon"
+            aria-hidden="true"
+            hidden
+          ></span>
           <span class="visually-hidden">Previous</span>
+          <img
+            src="https://i.ibb.co/Lp9F7pM/Untitled-1-06-1.png"
+            height="80px"
+          />
         </button>
         <button
           class="carousel-control-next"
@@ -524,13 +491,303 @@
           data-bs-target="#cardCarousel"
           data-bs-slide="next"
         >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span
+            class="carousel-control-next-icon"
+            aria-hidden="true"
+            hidden
+          ></span>
           <span class="visually-hidden">Next</span>
+          <img src="https://i.ibb.co/dL94zth/Untitled-1-06.png" height="80px" />
         </button>
       </div>
     </div>
 
     <!-- View 5 : Thẻ bí ẩn -->
+    <div
+      class="container-fluid"
+      style="margin: 0; padding: 0; position: relative"
+    >
+      <div>
+        <img src="https://i.ibb.co/1mBWxMM/5-05.png" width="100%" />
+      </div>
+      <div
+        style="
+          position: absolute;
+          bottom: 15px;
+          right: 30px;
+          width: 60%;
+          padding: 20px;
+          border-radius: 10px;
+        "
+      >
+        <!-- Khu vực thẻ bí ẩn -->
+        <div class="container-fluid" style="margin: 0; padding: 0">
+          <!-- Flex container cho 3 slide -->
+          <div
+            class="d-flex justify-content-between"
+            style="padding-bottom: 80px"
+          >
+            <!-- Slide 1: Nhóm thẻ bí ẩn 1 -->
+            <div
+              id="cardCarousel_01"
+              class="carousel slide"
+              data-bs-ride="false"
+              style="width: 20%"
+            >
+              <div class="carousel-inner carousel-inner-bi-an mb-5 mt-2">
+                <div class="carousel-item item-bi-an active">
+                  <div
+                    class="d-flex justify-content-center"
+                    id="cardContainer_01"
+                  >
+                    <div class="card mx-1" style="width: 10rem">
+                      <img
+                        src="https://i.ibb.co/2qGZL2t/11.png"
+                        class="card-img-top"
+                        alt="Card 1"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item item-bi-an">
+                  <div
+                    class="d-flex justify-content-center"
+                    id="cardContainer_01"
+                  >
+                    <div class="card mx-1" style="width: 10rem">
+                      <img
+                        src="https://i.ibb.co/1MLsXMp/12.png"
+                        class="card-img-top"
+                        alt="Card 2"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item item-bi-an">
+                  <div
+                    class="d-flex justify-content-center"
+                    id="cardContainer_01"
+                  >
+                    <div class="card mx-1" style="width: 10rem">
+                      <img
+                        src="https://i.ibb.co/j8GhFJ6/13.png"
+                        class="card-img-top"
+                        alt="Card 3"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Các nút điều hướng cho Slide 1 -->
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#cardCarousel_01"
+                data-bs-slide="prev"
+                id="prevButton"
+              >
+                <img
+                  src="https://i.ibb.co/m8jsxYy/Untitled-1-04-1.png"
+                  width="50px"
+                  style="margin-right: 70px"
+                />
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                id="nextButton_01"
+                data-bs-target="#cardCarousel_01"
+                data-bs-slide="next"
+              >
+                <img
+                  src="https://i.ibb.co/jHHgv8w/Untitled-1-04.png"
+                  height="50px"
+                  style="margin-left: 70px"
+                />
+              </button>
+            </div>
+
+            <!-- Slide 2: Nhóm thẻ bí ẩn 2 -->
+            <div
+              id="cardCarousel_02"
+              class="carousel slide"
+              data-bs-ride="false"
+              style="width: 20%"
+            >
+              <div class="carousel-inner carousel-inner-bi-an mb-5 mt-2">
+                <div class="carousel-item active">
+                  <div
+                    class="d-flex justify-content-center"
+                    id="cardContainer_02"
+                  >
+                    <div class="card mx-1" style="width: 10rem">
+                      <img
+                        src="https://i.ibb.co/261h0vC/14.png"
+                        class="card-img-top"
+                        alt="Card 4"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div
+                    class="d-flex justify-content-center"
+                    id="cardContainer_02"
+                  >
+                    <div class="card mx-1" style="width: 10rem">
+                      <img
+                        src="https://i.ibb.co/xMvXBPy/15.png"
+                        class="card-img-top"
+                        alt="Card 5"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div
+                    class="d-flex justify-content-center"
+                    id="cardContainer_02"
+                  >
+                    <div class="card mx-1" style="width: 10rem">
+                      <img
+                        src="https://i.ibb.co/nrJRcjB/16.png"
+                        class="card-img-top"
+                        alt="Card 6"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Các nút điều hướng cho Slide 2 -->
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#cardCarousel_02"
+                data-bs-slide="prev"
+                id="prevButton"
+              >
+                <img
+                  src="https://i.ibb.co/m8jsxYy/Untitled-1-04-1.png"
+                  height="50px"
+                  style="margin-right: 70px"
+                />
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                id="nextButton_01"
+                data-bs-target="#cardCarousel_02"
+                data-bs-slide="next"
+              >
+                <img
+                  src="https://i.ibb.co/jHHgv8w/Untitled-1-04.png"
+                  width="50px"
+                  style="margin-left: 70px"
+                />
+              </button>
+            </div>
+
+            <!-- Slide 3: Nhóm thẻ bí ẩn 3 -->
+            <div
+              id="cardCarousel_03"
+              class="carousel slide"
+              data-bs-ride="false"
+              style="width: 20%"
+            >
+              <div class="carousel-inner carousel-inner-bi-an mb-5 mt-2">
+                <div class="carousel-item active">
+                  <div
+                    class="d-flex justify-content-center"
+                    id="cardContainer_03"
+                  >
+                    <div class="card mx-1" style="width: 10rem">
+                      <img
+                        src="https://i.ibb.co/xjYkqyW/1.png"
+                        class="card-img-top"
+                        alt="Card 7"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div
+                    class="d-flex justify-content-center"
+                    id="cardContainer_03"
+                  >
+                    <div class="card mx-1" style="width: 10rem">
+                      <img
+                        src="https://i.ibb.co/JdL5Bw7/2.png"
+                        class="card-img-top"
+                        alt="Card 8"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div
+                    class="d-flex justify-content-center"
+                    id="cardContainer_03"
+                  >
+                    <div class="card mx-1" style="width: 10rem">
+                      <img
+                        src="https://i.ibb.co/t2HcsDq/3.png"
+                        class="card-img-top"
+                        alt="Card 9"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Các nút điều hướng cho Slide 3 -->
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#cardCarousel_03"
+                data-bs-slide="prev"
+                id="prevButton"
+              >
+                <img
+                  src="https://i.ibb.co/m8jsxYy/Untitled-1-04-1.png"
+                  height="50px"
+                  style="margin-right: 70px"
+                />
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                id="nextButton_01"
+                data-bs-target="#cardCarousel_03"
+                data-bs-slide="next"
+              >
+                <img
+                  src="https://i.ibb.co/jHHgv8w/Untitled-1-04.png"
+                  width="50px"
+                  style="margin-left: 70px"
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+        <p
+          class="text-center"
+          style="
+            color: #fba919;
+            font-weight: bold;
+            font-size: 30px;
+            padding-bottom: 50px;
+          "
+        >
+          THẺ BÍ ẨN
+        </p>
+        <p
+          style="text-align: justify; margin: 0; color: black; font-size: 18px"
+        >
+          Nếu bạn đến ô Ngôi Sao, hãy rút 1 thẻ bí ẩn, xem kỹ thông tin trên thẻ
+          và thực hiện đúng nhiệm vụ ghi trên đó, bạn có thể sử dụng chức năng
+          đặc biệt của nhân vật vào bất kỳ lúc nào để làm chậm đối thủ.
+        </p>
+      </div>
+    </div>
 
     <!-- View 6 : Luật chơi & Lưu ý -->
     <div
@@ -547,7 +804,7 @@
         <p
           class="text-center"
           style="
-            color: #f7d907;
+            color: #fba919;
             font-weight: bold;
             font-size: 30px;
             padding-top: 70px;
@@ -558,14 +815,14 @@
         </p>
         <div style="padding: 0 10%">
           <div class="luatchoi-item">
-            <p class="number-item">1</p>
+            <div class="number-item">1</div>
             <p>
               Mỗi người chơi rút thẻ nhân vật ngẫu nhiên để chọn nhân vật đại
               diện cho mình trên bản đồ. Đăt standee nhân vật vào ô "Bắt Đầu".
             </p>
           </div>
           <div class="luatchoi-item">
-            <p class="number-item">2</p>
+            <div class="number-item">2</div>
             <p>
               Tất cả người chơi xoay ngẫu nhiên 2 viên xúc xắc và tính tổng
               điểm. Sắp xếp thứ tự chơi từ người có tổng điểm cao nhất đến thấp
@@ -573,7 +830,7 @@
             </p>
           </div>
           <div class="luatchoi-item">
-            <p class="number-item">3</p>
+            <div class="number-item">3</div>
             <p>
               Theo thứ tự đã xác định, mỗi người chơi sẽ di chuyển trên bản đồ
               theo số bước tương ứng với tổng điểm xúc xắc của mình. Lưu ý các ô
@@ -581,7 +838,7 @@
             </p>
           </div>
           <div class="luatchoi-item">
-            <p class="number-item">4</p>
+            <div class="number-item">4</div>
             <p>
               Nếu bạn đến ô Ngôi Sao, hãy rút 1 thẻ bí ẩn. Xem kỹ thông tin trên
               thẻ và thực hiện đúng nhiệm vụ ghi trên đó. Bạn có thể sử dụng
@@ -590,12 +847,12 @@
             </p>
           </div>
           <div class="luatchoi-item">
-            <p class="number-item">5</p>
+            <div class="number-item">5</div>
             <p>
               Nếu bạn đến ô Ngôi Sao, hãy rút 1 thẻ bí ẩn. Xem kỹ thông tin trên
               thẻ và thực hiện đúng nhiệm vụ ghi trên đó. Bạn có thể sử dụng
               chức năng đặc biệt của nhân vật vào bất kỳ lúc nào để làm chậm đối
-              thủ
+              thủ.
             </p>
           </div>
         </div>
@@ -606,7 +863,7 @@
         <p
           class="text-center py-4"
           style="
-            color: #f7d907;
+            color: #fba919;
             font-weight: bold;
             font-size: 30px;
             padding-top: 70px;
@@ -617,18 +874,18 @@
         </p>
         <div>
           <div class="luuy-item">
-            <p class="number-item">1</p>
+            <div class="number-item">1</div>
             <p>
               Khi các dũng sĩ di chuyển và đến cùng một ô trên bản đồ, thì người
               chơi đang đứng tại ô đó sẽ bị lùi lại phía sau một ô.
             </p>
           </div>
           <div class="luuy-item">
-            <p class="number-item">2</p>
+            <div class="number-item">2</div>
             <p>Mỗi thẻ Chiến Linh chỉ được sử dụng chức năng 1 lần duy nhất.</p>
           </div>
           <div class="luuy-item">
-            <p class="number-item">3</p>
+            <div class="number-item">3</div>
             <p>
               Trên mỗi thẻ bí ẩn có ghi cách sử dụng (Dùng ngay lập tức, sử dụng
               bất kì lúc nào và dùng khi đến lượt).
@@ -640,20 +897,39 @@
 
     <!-- View 7 : Đặt hàng -->
     <div
-      style="
-        background-image: url('https://i.ibb.co/2ZDwLSH/2-1-03.png');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        min-height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        align-items: center;
-        position: relative;
-        text-align: center;
-      "
-    ></div>
+      class="container-fluid"
+      style="margin: 0; padding: 0; position: relative"
+    >
+      <div>
+        <img src="https://i.ibb.co/2tv19JL/Untitled-1-01.png" width="100%" />
+      </div>
+      <div
+        style="
+          position: absolute;
+          top: 50%;
+          right: 0;
+          width: 45%;
+          background-color: transparent;
+          padding-right: 5%;
+          text-align: center;
+        "
+      >
+        <p style="margin: 0">
+          Board Game CHIẾN LINH HUYỄN CẢNH được thực hiện với mục đích tạo sự
+          gắn kết xã hội trong bối cảnh các thiết bị công nghệ ngày càng phát
+          triển, dẫn đến sự xa cách trong các mối quan hệ bạn bè, ROG Studio
+          muốn tạo nên những cuộc gặp gỡ, vui chơi, giải tỏa căng thẳng thông
+          qua bộ Board Game CHIẾN LINH HUYỄN CẢNH, góp phần tạo sự gắn kết trong
+          xã hội.
+        </p>
+        <button
+          class="btn-buy-order"
+          style="color: #fba919; font-weight: bold; margin-top: 10px"
+        >
+          ĐẶT HÀNG NGAY
+        </button>
+      </div>
+    </div>
 
     <!-- View 8 : Footer -->
     <footer
@@ -683,7 +959,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script>
       const cardContainer = document.getElementById("cardContainer");
+      const cardContainer_01 = document.getElementById("cardContainer_01");
+      const cardContainer_02 = document.getElementById("cardContainer_02");
+      const cardContainer_03 = document.getElementById("cardContainer_03");
       const nextButton = document.getElementById("nextButton");
+      const prevButton = document.getElementById("prevButton");
       const allCardImages = [
         "https://i.ibb.co/X3TVvHD/the-nhan-vat-01.png",
         "https://i.ibb.co/SdKxpfk/the-nhan-vat-02.png",
@@ -696,6 +976,30 @@
         "https://i.ibb.co/3yY2htZ/the-nhan-vat-09.png",
         "https://i.ibb.co/85HBpvL/the-nhan-vat-10.png",
       ];
+
+      const allCard_BiAn_01 = [
+        "https://i.ibb.co/2qGZL2t/11.png",
+        "https://i.ibb.co/1MLsXMp/12.png",
+        "https://i.ibb.co/j8GhFJ6/13.png",
+        "https://i.ibb.co/261h0vC/14.png",
+        "https://i.ibb.co/xMvXBPy/15.png",
+        "https://i.ibb.co/nrJRcjB/16.png",
+      ];
+      const allCard_BiAn_02 = [
+        "https://i.ibb.co/xjYkqyW/1.png",
+        "https://i.ibb.co/JdL5Bw7/2.png",
+        "https://i.ibb.co/t2HcsDq/3.png",
+        "https://i.ibb.co/TK332Rc/4.png",
+        "https://i.ibb.co/wJ4vJVk/5.png",
+      ];
+      const allCard_BiAn_03 = [
+        "https://i.ibb.co/GthtQ4t/6.png",
+        "https://i.ibb.co/HPDWKS0/7.png",
+        "https://i.ibb.co/FDzkn0T/8.png",
+        "https://i.ibb.co/jDfjKZs/9.png",
+        "https://i.ibb.co/C5HQjwP/10.png",
+      ];
+
       let currentActiveIndex = 0;
 
       function createCard(index) {
@@ -733,12 +1037,21 @@
         cardContainer.appendChild(activeCard);
         cardContainer.appendChild(nextCard);
       }
+
       function moveActiveCard() {
-        // Cập nhật active index và render lại cards
         currentActiveIndex = (currentActiveIndex + 1) % allCardImages.length;
         renderCards();
       }
+
+      function movePrevCard() {
+        currentActiveIndex =
+          (currentActiveIndex - 1 + allCardImages.length) %
+          allCardImages.length;
+        renderCards();
+      }
+
       renderCards();
+      prevButton.addEventListener("click", movePrevCard);
       nextButton.addEventListener("click", moveActiveCard);
     </script>
   </body>
